@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Faturando Alto no Natal - Palestra Especial</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Open Sans', 'sans-serif'],
-              display: ['Montserrat', 'sans-serif'],
-            },
-            colors: {
-              brand: {
-                dark: '#1a1a40', // Deep blue from title
-                red: '#DC2626', // Christmas red
-                green: '#10B981', // Flyer green
-                gold: '#F59E0B', // Accent gold
-              }
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faturando Alto no Natal - Palestra Especial</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@400;600&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Open Sans', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#1a1a40', // Deep blue from title
+              red: '#DC2626', // Christmas red
+              green: '#10B981', // Flyer green
+              gold: '#F59E0B', // Accent gold
             }
           }
         }
       }
-    </script>
-    <style>
-      body {
-        background-color: #f8fafc;
-      }
-      .christmas-gradient {
-        background: radial-gradient(circle at top right, #fee2e2 0%, #ffffff 50%);
-      }
-    </style>
-    <!-- Meta Pixel Code -->
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    }
+  </script>
+  <style>
+    body {
+      background-color: #f8fafc;
+    }
+
+    .christmas-gradient {
+      background: radial-gradient(circle at top right, #fee2e2 0%, #ffffff 50%);
+    }
+  </style>
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '25727176796888828');
+    fbq('init', '1201144861954561');
     fbq('track', 'PageView');
-    </script>
- 
-    <!-- End Meta Pixel Code -->
+  </script>
+
+  <!-- End Meta Pixel Code -->
   <script type="importmap">
 {
   "imports": {
@@ -59,10 +67,12 @@
   }
 }
 </script>
-<link rel="stylesheet" href="/index.css">
+  <link rel="stylesheet" href="/index.css">
 </head>
-  <body>
-    <div id="root"></div>
+
+<body>
+  <div id="root"></div>
   <script type="module" src="/index.tsx"></script>
 </body>
+
 </html>
